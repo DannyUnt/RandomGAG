@@ -1,0 +1,15 @@
+PODS:
+  - Kingfisher (3.3.4)
+  - SwiftSoup (1.2.0)
+
+DEPENDENCIES:
+  - Kingfisher (~> 3.0)
+  - SwiftSoup
+
+SPEC CHECKSUMS:
+  Kingfisher: 35f289f015d26e81ea6c85048718c6205f3933c6
+  SwiftSoup: 1ac190457246df2d0d53fedf349dd2651e2b2858
+
+PODFILE CHECKSUM: a88dae9440774aa0506d7d4253e9caf68bf3c496
+
+COCOAPODS: 1.2.0
