@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		301AF5CB1E720553009AAE2F /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301AF5CA1E720553009AAE2F /* PostCell.swift */; };
+		301F85FE1EFC4C4400829401 /* NewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301F85FD1EFC4C4400829401 /* NewTest.swift */; };
 		30285F821EE455BF00AF1CEC /* ReloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30285F811EE455BF00AF1CEC /* ReloadView.swift */; };
 		3039311C1EF6E53A00574801 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039311B1EF6E53A00574801 /* ViewModel.swift */; };
 		3039311E1EF6E6B100574801 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039311D1EF6E6B100574801 /* Post.swift */; };
@@ -22,6 +23,7 @@
 		30AB2EBD1E70A96200787DAE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB2EBC1E70A96200787DAE /* WebService.swift */; };
 		30C65E2B1EB5D2E7007DEF39 /* Gag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C65E2A1EB5D2E7007DEF39 /* Gag.swift */; };
 		30C65E2D1EB5D410007DEF39 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C65E2C1EB5D410007DEF39 /* Test.swift */; };
+		30DDFEC81EF717C2007BF80D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DDFEC71EF717C2007BF80D /* NetworkManager.swift */; };
 		8B31F0916B2637F363F2BD34 /* Pods_RandomGAGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9CB5919EEB7E88E76DDBD2 /* Pods_RandomGAGTests.framework */; };
 		FDA4FD8AE183400593583903 /* Pods_RandomGAG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A7D01DBE30BB6BCF2D5E64 /* Pods_RandomGAG.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		301AF5CA1E720553009AAE2F /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		301F85FD1EFC4C4400829401 /* NewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTest.swift; sourceTree = "<group>"; };
 		30285F811EE455BF00AF1CEC /* ReloadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReloadView.swift; sourceTree = "<group>"; };
 		3039311B1EF6E53A00574801 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3039311D1EF6E6B100574801 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		30AB2EBC1E70A96200787DAE /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		30C65E2A1EB5D2E7007DEF39 /* Gag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gag.swift; sourceTree = "<group>"; };
 		30C65E2C1EB5D410007DEF39 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		30DDFEC71EF717C2007BF80D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		46A7D01DBE30BB6BCF2D5E64 /* Pods_RandomGAG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomGAG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EDD7537774A96F16704794 /* Pods-RandomGAGTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomGAGTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomGAGTests/Pods-RandomGAGTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAA62A5D1BAA80C674E18D5E /* Pods-RandomGAG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomGAG.release.xcconfig"; path = "Pods/Target Support Files/Pods-RandomGAG/Pods-RandomGAG.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3076AFD41F4B5F1900C1AD4F /* OLD */ = {
+			isa = PBXGroup;
+			children = (
+				30AB2EBC1E70A96200787DAE /* WebService.swift */,
+				309663DF1E70489500A2F3A9 /* SecondVC.swift */,
+				309663E11E7052F100A2F3A9 /* ThirdVC.swift */,
+				309663C11E703E2C00A2F3A9 /* ViewController.swift */,
+				30C65E2C1EB5D410007DEF39 /* Test.swift */,
+			);
+			name = OLD;
+			sourceTree = "<group>";
+		};
 		309663B31E703E2B00A2F3A9 = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +123,11 @@
 		309663BE1E703E2C00A2F3A9 /* RandomGAG */ = {
 			isa = PBXGroup;
 			children = (
+				3076AFD41F4B5F1900C1AD4F /* OLD */,
 				30AB2EBB1E70A91100787DAE /* Singletone */,
 				30AB2EBA1E70A90900787DAE /* Controller */,
 				30AB2EB91E70A90200787DAE /* View */,
 				30AB2EB81E70A8EE00787DAE /* Model */,
-				309663C11E703E2C00A2F3A9 /* ViewController.swift */,
-				309663DF1E70489500A2F3A9 /* SecondVC.swift */,
-				309663E11E7052F100A2F3A9 /* ThirdVC.swift */,
 				309663C61E703E2C00A2F3A9 /* Assets.xcassets */,
 				309663C81E703E2C00A2F3A9 /* LaunchScreen.storyboard */,
 				309663CB1E703E2C00A2F3A9 /* Info.plist */,
@@ -133,9 +147,9 @@
 		30AB2EB81E70A8EE00787DAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				30AB2EBC1E70A96200787DAE /* WebService.swift */,
 				3039311B1EF6E53A00574801 /* ViewModel.swift */,
 				3039311D1EF6E6B100574801 /* Post.swift */,
+				30DDFEC71EF717C2007BF80D /* NetworkManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -154,7 +168,7 @@
 			children = (
 				30A12E2F1E71354C00A5F630 /* MainViewController.swift */,
 				301AF5CA1E720553009AAE2F /* PostCell.swift */,
-				30C65E2C1EB5D410007DEF39 /* Test.swift */,
+				301F85FD1EFC4C4400829401 /* NewTest.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -393,10 +407,12 @@
 				301AF5CB1E720553009AAE2F /* PostCell.swift in Sources */,
 				3039311E1EF6E6B100574801 /* Post.swift in Sources */,
 				309663E21E7052F100A2F3A9 /* ThirdVC.swift in Sources */,
+				30DDFEC81EF717C2007BF80D /* NetworkManager.swift in Sources */,
 				30C65E2D1EB5D410007DEF39 /* Test.swift in Sources */,
 				3039311C1EF6E53A00574801 /* ViewModel.swift in Sources */,
 				309663C21E703E2C00A2F3A9 /* ViewController.swift in Sources */,
 				30C65E2B1EB5D2E7007DEF39 /* Gag.swift in Sources */,
+				301F85FE1EFC4C4400829401 /* NewTest.swift in Sources */,
 				30285F821EE455BF00AF1CEC /* ReloadView.swift in Sources */,
 				309663E01E70489500A2F3A9 /* SecondVC.swift in Sources */,
 				30A12E301E71354C00A5F630 /* MainViewController.swift in Sources */,

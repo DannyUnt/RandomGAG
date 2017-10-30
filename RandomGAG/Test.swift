@@ -11,21 +11,12 @@ import Kingfisher
 
 class Test: UIViewController {
     private var gags = [UIView]()
-    let vm: ViewModel
+    var vm: ViewModel!
     
     var ws: WebService { return .shared }
     var count: Int = 0
     var ind: Int = 0
     var reloadView: ReloadView!
-    
-    init(viewModel: ViewModel) {
-        self.vm = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     var container: UIView = {
         let container = UIView()
@@ -70,6 +61,7 @@ class Test: UIViewController {
             self?.setupViews()
         })
         
+    
         let end = Date()
         print("Time: \(end.timeIntervalSince(start))")
     }

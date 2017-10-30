@@ -47,8 +47,19 @@ class Gag: UIView {
     
     func loadImage() {
         guard let url = URL(string: (post?.imageURL)!) else { return }
-        self.girlView.kf.setImage(with: url, options: [.forceRefresh])
+        //self.girlView.kf.setImage(with: url, options: [.forceRefresh])
+        
+        DispatchQueue.global(qos: .utility).async {
+            print("enter bacground thread")
+            let content = NSData(contentsOf: url as URL)
+            DispatchQueue.main.async {
+                print("back to main thread")
+                self.girlView.image = UIImage(data: content! as Data)
+            }
+        }
     }
+    
+    
     
     func setupView() {
         self.addSubview(girlView)

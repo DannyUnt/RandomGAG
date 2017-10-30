@@ -7,17 +7,34 @@
 //
 
 import UIKit
+import SwiftSoup
 
 class ViewModel {
-    let post: Post
-    var posts: [UIView]
+    var networkManager: NetworkManager!
+    var posts = [Post]()
+    var reload: Bool
+    var url: String
+
     
-    var postURL: NSURL? {
-        return NSURL(string: post.imageURL)
+    init() {
+        networkManager = NetworkManager()
+        url = "http://9gag.com/girl"
+        reload = false
     }
     
-    init(post: Post, posts: [UIView]) {
-        self.post = post
-        self.posts = posts
+    func fetchPosts(completion: @escaping ([Post]) -> ()) {
+        self.posts.removeAll()
+        if reload {
+            url = "http://9gag.com" + networkManager.reloadURL!
+            print(url)
+        }
+        
+        networkManager.getDataFromURL(with: url) { [weak self] posts in
+            guard let strongSelf = self else { return }
+            strongSelf.posts = posts
+            completion(strongSelf.posts)
+        }
+        
+        reload = true
     }
 }

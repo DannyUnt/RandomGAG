@@ -14,12 +14,15 @@ class App {
     let main: MainViewController
     let test: UIViewController
     
+    let nt: UIViewController
+    
     init(window: UIWindow!) {
         
         vc = ViewController()
         main = MainViewController()
         test = Test()
-        navigationController = UINavigationController(rootViewController: test)
+        nt = NewTest()
+        navigationController = UINavigationController(rootViewController: nt)
         
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
@@ -32,9 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var app: App?
-    
-    
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -42,8 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if window != nil {
             app = App(window: window)
         }
-        
-        
+
         return true
     }
 
